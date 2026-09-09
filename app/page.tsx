@@ -3,10 +3,10 @@
 import { useEffect, useState } from 'react';
 
 const projects = [
-  { name: 'Tracce Magazine', slug: 'sul-bordo', className: 'character-cat', normal: '/art/buttons/cat-normal.png', hover: '/art/buttons/cat-hover.png', speech: 'Tracce Magazine' },
-  { name: 'Area personale', slug: 'sotto-la-superficie', className: 'character-mushroom', normal: '/art/buttons/mushroom-normal.png', hover: '/art/buttons/mushroom-hover.png', speech: 'Area personale' },
-  { name: 'Vinile', slug: 'specie-di-passaggio', className: 'character-toucan', normal: '/art/buttons/toucan-normal.png', hover: '/art/buttons/toucan-hover.png', speech: 'Vinile' },
-  { name: 'Poster', slug: 'il-custode-del-silenzio', className: 'character-blue-man', normal: '/art/buttons/blue-man-normal.png', hover: '/art/buttons/blue-man-hover.png', speech: 'Poster' },
+  { name: 'Tracce Magazine', slug: 'tracce-magazine', className: 'character-cat', normal: '/art/buttons/cat-normal.png', hover: '/art/buttons/cat-hover.png', speech: 'Tracce Magazine' },
+  { name: 'Area personale', slug: 'area-personale', className: 'character-mushroom', normal: '/art/buttons/mushroom-normal.png', hover: '/art/buttons/mushroom-hover.png', speech: 'Area personale' },
+  { name: 'Vinili', slug: 'vinili', className: 'character-toucan', normal: '/art/buttons/toucan-normal.png', hover: '/art/buttons/toucan-hover.png', speech: 'Vinili' },
+  { name: 'Poster', slug: 'poster', className: 'character-blue-man', normal: '/art/buttons/blue-man-normal.png', hover: '/art/buttons/blue-man-hover.png', speech: 'Poster' },
 ];
 
 function HoverCursor() {

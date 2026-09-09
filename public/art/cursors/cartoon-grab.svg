@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="36" viewBox="0 0 34 36">
+  <path d="M10 32 L8.5 25 C6.5 24 2.5 21 2.5 16.5 C2.5 13 6 12 8 15 L8 6.5 C8 4 10 2.5 12 3.5 C13.5 4.5 14 6 14 8.5 L14 5 C14 2.5 16 1 18 2 C19.8 3 20.2 5 20 7.5 L20 6.5 C20 4.2 22 3 23.8 4 C25.5 5 25.8 7 25.5 9.5 L25.5 11.5 C25.5 9.5 27.2 8.5 28.8 9.5 C30.5 10.8 30.5 13 29.5 16 C28 20.5 25 26 23 29 L21.5 32 Z" fill="#f4f0e8" stroke="#211d17" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- Palm creases -->
+  <path d="M8.5 19 C12 21 16 22 21 19" fill="none" stroke="#211d17" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M10 23 C14 25.5 18 25.5 21 23" fill="none" stroke="#211d17" stroke-width="1.6" stroke-linecap="round"/>
+  <!-- Dart lines on back/cuff -->
+  <path d="M13 28 L13 31" fill="none" stroke="#211d17" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M16 28 L16 31" fill="none" stroke="#211d17" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M19 28 L19 31" fill="none" stroke="#211d17" stroke-width="1.2" stroke-linecap="round"/>
+</svg>
