@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Vinili sul tavolo',
-  description: 'Una selezione di vinili da sfogliare.',
+  title: 'Portfolio illustrato',
+  description: 'Quattro progetti in una tavola illustrata.',
 };
 
 export default function RootLayout({

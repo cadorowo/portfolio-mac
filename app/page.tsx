@@ -1,59 +1,44 @@
 'use client';
 
-import { useState } from 'react';
-import { ArrowRight } from 'lucide-react';
+import { useEffect, useState } from 'react';
 
-import { Button } from '@/components/ui/button';
-
-const vinyls = [
-  { id: 'casbah', title: 'Casbah', src: '/art/vinili/casbah.png' },
-  { id: 'soi', title: 'Situazioni Organiche Indipendenti', src: '/art/vinili/soi.png' },
-  { id: 'stampede', title: 'Stampede', src: '/art/vinili/stampede-grey.png' },
-  { id: 'back', title: 'Vinyl back', src: '/art/vinili/vinyl-back.png' },
+const projects = [
+  { name: 'Tracce Magazine', slug: 'sul-bordo', className: 'character-cat', normal: '/art/buttons/cat-normal.png', hover: '/art/buttons/cat-hover.png', speech: 'Tracce Magazine' },
+  { name: 'Area personale', slug: 'sotto-la-superficie', className: 'character-mushroom', normal: '/art/buttons/mushroom-normal.png', hover: '/art/buttons/mushroom-hover.png', speech: 'Area personale' },
+  { name: 'Vinile', slug: 'specie-di-passaggio', className: 'character-toucan', normal: '/art/buttons/toucan-normal.png', hover: '/art/buttons/toucan-hover.png', speech: 'Vinile' },
+  { name: 'Poster', slug: 'il-custode-del-silenzio', className: 'character-blue-man', normal: '/art/buttons/blue-man-normal.png', hover: '/art/buttons/blue-man-hover.png', speech: 'Poster' },
 ];
 
+function HoverCursor() {
+  const [cursor, setCursor] = useState<{ x: number; y: number; label: string } | null>(null);
+
+  useEffect(() => {
+    const move = (event: MouseEvent) => {
+      const target = (event.target as HTMLElement).closest<HTMLElement>('[data-cursor-label]');
+      setCursor(target ? { x: event.clientX, y: event.clientY, label: target.dataset.cursorLabel ?? '' } : null);
+    };
+    window.addEventListener('mousemove', move);
+    return () => window.removeEventListener('mousemove', move);
+  }, []);
+
+  return cursor ? <span className="hover-cursor-label" style={{ left: cursor.x, top: cursor.y }}>{cursor.label}</span> : null;
+}
+
 export default function Home() {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [leavingIndex, setLeavingIndex] = useState<number | null>(null);
-  const [isAnimating, setIsAnimating] = useState(false);
-
-  const showNextVinyl = () => {
-    if (isAnimating) return;
-
-    setLeavingIndex(activeIndex);
-    setActiveIndex((index) => (index + 1) % vinyls.length);
-    setIsAnimating(true);
-    window.setTimeout(() => {
-      setLeavingIndex(null);
-      setIsAnimating(false);
-    }, 520);
-  };
-
-  const activeVinyl = vinyls[activeIndex];
-
   return (
     <main className="portfolio-stage">
-      <section className="vinyl-table" aria-label="Selezione vinili">
-        <img className="desk-background" src="/art/desk-photo.jpg" alt="" />
-        <div className="vinyl-deck">
-          <p className="vinyl-count" aria-live="polite">
-            {String(activeIndex + 1).padStart(2, '0')} / {String(vinyls.length).padStart(2, '0')}
-          </p>
-          <div className="cover-stack" aria-label={`Vinile: ${activeVinyl.title}`}>
-            {leavingIndex !== null && (
-              <img
-                className="vinyl-cover vinyl-cover-leaving"
-                src={vinyls[leavingIndex].src}
-                alt=""
-                aria-hidden="true"
-              />
-            )}
-            <img key={activeVinyl.id} className="vinyl-cover vinyl-cover-entering" src={activeVinyl.src} alt={activeVinyl.title} />
-          </div>
-          <Button className="next-vinyl" variant="outline" size="icon-lg" onClick={showNextVinyl} disabled={isAnimating} aria-label="Mostra il vinile successivo">
-            <ArrowRight aria-hidden="true" />
-          </Button>
-        </div>
+      <HoverCursor />
+      <section className="artboard" aria-label="Portfolio illustrato">
+        <img className="backdrop" src="/art/fondale.png" alt="Illustrazione di una grotta con una valle al centro" />
+        {projects.map((project) => (
+          <a className={`character ${project.className}`} href={`/${project.slug}`} key={project.slug} aria-label={`Apri il progetto ${project.name}`} data-cursor-label={project.speech}>
+            <img className="character-normal" src={project.normal} alt="" />
+            <img className="character-hover" src={project.hover} alt="" />
+            <span className="speech-bubble" aria-hidden="true">{project.speech}</span>
+          </a>
+        ))}
+        <img className="stalactite" src="/art/buttons/stalattite.png" alt="" aria-hidden="true" />
+        <img className="stalactite stalactite-two" src="/art/buttons/stalattite2.png" alt="" aria-hidden="true" />
       </section>
     </main>
   );
