@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 
 const projects = [
   { name: 'Tracce Magazine', slug: 'tracce-magazine', className: 'character-cat', normal: '/art/buttons/cat-normal.png', hover: '/art/buttons/cat-hover.png', speech: 'Tracce Magazine' },
-  { name: 'Area personale', slug: 'area-personale', className: 'character-mushroom', normal: '/art/buttons/mushroom-normal.png', hover: '/art/buttons/mushroom-hover.png', speech: 'Area personale' },
+  { name: 'About Me', slug: 'about-me', className: 'character-mushroom', normal: '/art/buttons/mushroom-normal.png', hover: '/art/buttons/mushroom-hover.png', speech: 'About Me' },
   { name: 'Vinili', slug: 'vinili', className: 'character-toucan', normal: '/art/buttons/toucan-normal.png', hover: '/art/buttons/toucan-hover.png', speech: 'Vinili' },
   { name: 'Poster', slug: 'poster', className: 'character-blue-man', normal: '/art/buttons/blue-man-normal.png', hover: '/art/buttons/blue-man-hover.png', speech: 'Poster' },
 ];

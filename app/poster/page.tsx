@@ -43,7 +43,7 @@ export default function PosterPage() {
         <HomeBackdropSheet />
         <img className="desk-background" src="/art/desk-photo.jpg" alt="" />
         <div className="vinyl-deck">
-          {selectedPoster === null ? (
+          {selectedIndex === null || selectedPoster === null ? (
             <div className="poster-gallery" aria-label="Quattro poster">
               {posters.map((poster, index) => (
                 <button className="poster-card" type="button" key={poster.id} onClick={() => { setDirection('next'); setSelectedIndex(index); }} aria-label={`Apri ${poster.title}`}>
