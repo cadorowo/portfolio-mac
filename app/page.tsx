@@ -1,12 +1,13 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { SiteLoader } from '@/components/site-loader';
 
 const projects = [
   { name: 'Tracce Magazine', slug: 'tracce-magazine', className: 'character-cat', normal: '/art/buttons/cat-normal.png', hover: '/art/buttons/cat-hover.png', speech: 'Tracce Magazine' },
   { name: 'About Me', slug: 'about-me', className: 'character-mushroom', normal: '/art/buttons/mushroom-normal.png', hover: '/art/buttons/mushroom-hover.png', speech: 'About Me' },
-  { name: 'Vinili', slug: 'vinili', className: 'character-toucan', normal: '/art/buttons/toucan-normal.png', hover: '/art/buttons/toucan-hover.png', speech: 'Vinili' },
-  { name: 'Poster', slug: 'poster', className: 'character-blue-man', normal: '/art/buttons/blue-man-normal.png', hover: '/art/buttons/blue-man-hover.png', speech: 'Poster' },
+  { name: 'Vinyls', slug: 'vinili', className: 'character-toucan', normal: '/art/buttons/toucan-normal.png', hover: '/art/buttons/toucan-hover.png', speech: 'Vinyls' },
+  { name: 'Posters', slug: 'poster', className: 'character-blue-man', normal: '/art/buttons/blue-man-normal.png', hover: '/art/buttons/blue-man-hover.png', speech: 'Posters' },
 ];
 
 function HoverCursor() {
@@ -27,11 +28,12 @@ function HoverCursor() {
 export default function Home() {
   return (
     <main className="portfolio-stage">
+      <SiteLoader />
       <HoverCursor />
-      <section className="artboard" aria-label="Portfolio illustrato">
-        <img className="backdrop" src="/art/fondale.png" alt="Illustrazione di una grotta con una valle al centro" />
+      <section className="artboard" aria-label="Illustrated Portfolio">
+        <img className="backdrop" src="/art/fondale.png" alt="Illustration of a cave opening onto an open valley" />
         {projects.map((project) => (
-          <a className={`character ${project.className}`} href={`/${project.slug}`} key={project.slug} aria-label={`Apri il progetto ${project.name}`} data-cursor-label={project.speech}>
+          <a className={`character ${project.className}`} href={`/${project.slug}`} key={project.slug} aria-label={`Open project: ${project.name}`} data-cursor-label={project.speech}>
             <img className="character-normal" src={project.normal} alt="" />
             <img className="character-hover" src={project.hover} alt="" />
             <span className="speech-bubble" aria-hidden="true">{project.speech}</span>

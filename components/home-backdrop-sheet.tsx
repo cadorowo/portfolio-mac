@@ -5,13 +5,13 @@ export function HomeBackdropSheet() {
     <a
       href="/"
       className="home-backdrop-sheet"
-      aria-label="Torna alla Home illustrata"
-      title="Torna alla Home"
+      aria-label="Return to illustrated Home"
+      title="Back to Home"
     >
       <div className="home-sheet-frame">
         <img
           src="/art/fondale.png"
-          alt="Anteprima del fondale illustrato della Home"
+          alt="Preview of the illustrated Home scenery"
           className="home-sheet-image"
         />
         <div className="home-sheet-overlay" aria-hidden="true" />
