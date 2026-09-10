@@ -7,54 +7,35 @@ import { HomeBackdropSheet } from '@/components/home-backdrop-sheet';
 
 export interface TraccePageItem {
   id: string;
-  title: string;
-  subtitle: string;
   src: string;
   alt: string;
-  description: string;
 }
 
 const pages: TraccePageItem[] = [
   {
     id: 'copertina',
-    title: 'Cover',
-    subtitle: 'Issue Zero • January 2025',
     src: '/art/tracce/Copertina Front-clean.jpg',
-    alt: 'Tracce Magazine Cover',
-    description:
-      'Official cover for Issue Zero of Tracce Magazine. An independent editorial project documenting visual culture, fashion, and subcultures through tactile analogue photography and experimental layouts.',
+    alt: 'Tracce Magazine - Cover',
   },
   {
-    id: 'editoriale',
-    title: 'Editorial',
-    subtitle: 'The Triciclo Vision',
+    id: 'pag-1',
     src: '/art/tracce/Pag.1-clean.jpg',
-    alt: 'Editorial - Page 1',
-    description:
-      'Introductory manifesto of the magazine. Laying down the editorial vision, chronicling the collective\'s origins and the urge to spotlight tangible stories beyond the frenzy of digital algorithms.',
+    alt: 'Tracce Magazine - Page 1',
   },
   {
-    id: 'denim',
-    title: 'A Sea of Denim',
-    subtitle: 'Elvis Presley',
+    id: 'pag-2',
     src: '/art/tracce/Pag 2-clean.jpg',
-    alt: 'A Sea of Denim - Page 2',
-    description:
-      'An in-depth exploration of denim and its iconic 20th-century impact. From the youthful rebellion embodied by Elvis Presley to the evolution of jeans into a universal pop-culture staple.',
+    alt: 'Tracce Magazine - Page 2',
   },
   {
-    id: 'strauss',
-    title: 'Levi Strauss',
-    subtitle: 'The Turning Point',
+    id: 'pag-3',
     src: '/art/tracce/Pag.3-clean.jpg',
-    alt: 'Levi Strauss - Page 3',
-    description:
-      'The industrial and social genesis of the brand that redefined American workwear, turning copper rivets and heavy-duty canvas into a global cultural phenomenon.',
+    alt: 'Tracce Magazine - Page 3',
   },
 ];
 
 const magazineDescription =
-  'Tracce Magazine is an independent editorial project created to document visual culture, fashion, and subcultures through tactile analogue photography and experimental layouts. A tangible journey exploring visual stories and social customs, far from the frenzy of digital algorithms.';
+  'Tracce is a magazine written for Triciclo, a small Turin-based company committed to reuse and recycling. Our task was to integrate these topics into a project specifically designed for design lovers. Tracce talks about healthy values in the coolest way possible.';
 
 function playPaperSound() {
   try {
@@ -218,22 +199,18 @@ export default function TracceMagazinePage() {
               <>
                 <div className="sidebar-content-top">
                   <div className="sidebar-kicker-row">
-                    <span className="sidebar-kicker">Fanzine</span>
+                    <span className="sidebar-kicker">2024</span>
                     <span className="sidebar-kicker-sep">•</span>
-                    <span className="sidebar-kicker">January 2025</span>
+                    <span className="sidebar-kicker">University Exam</span>
                   </div>
                   <div>
-                    <h1 className="sidebar-title">{leftPage.title} &amp; {rightPage.title}</h1>
-                    <p className="sidebar-subtitle">B5 Double-page spread • {leftPage.subtitle}</p>
+                    <h1 className="sidebar-title">Tracce Magazine</h1>
+                    <p className="sidebar-subtitle">Typography &amp; Communication Design • Triciclo</p>
                   </div>
                   <div className="sidebar-divider" />
                   <div className="sidebar-description-box">
-                    <span className="sidebar-description-heading">{leftPage.title}</span>
-                    <p className="sidebar-description-text">{leftPage.description}</p>
-                  </div>
-                  <div className="sidebar-description-box" style={{ marginTop: '0.4rem' }}>
-                    <span className="sidebar-description-heading">{rightPage.title}</span>
-                    <p className="sidebar-description-text">{rightPage.description}</p>
+                    <span className="sidebar-description-heading">Project Overview</span>
+                    <p className="sidebar-description-text">{magazineDescription}</p>
                   </div>
                 </div>
 
@@ -247,19 +224,17 @@ export default function TracceMagazinePage() {
               <>
                 <div className="sidebar-content-top">
                   <div className="sidebar-kicker-row">
-                    <span className="sidebar-kicker">Editorial Project</span>
+                    <span className="sidebar-kicker">2024</span>
                     <span className="sidebar-kicker-sep">•</span>
-                    <span className="sidebar-kicker">Issue Zero</span>
-                    <span className="sidebar-kicker-sep">•</span>
-                    <span className="sidebar-kicker">2025</span>
+                    <span className="sidebar-kicker">University Exam</span>
                   </div>
                   <div>
                     <h1 className="sidebar-title">Tracce Magazine</h1>
-                    <p className="sidebar-subtitle">Independent printed fanzine • Triciclo</p>
+                    <p className="sidebar-subtitle">Typography &amp; Communication Design • Triciclo</p>
                   </div>
                   <div className="sidebar-divider" />
                   <div className="sidebar-description-box">
-                    <span className="sidebar-description-heading">Vision &amp; Manifesto</span>
+                    <span className="sidebar-description-heading">Project Overview</span>
                     <p className="sidebar-description-text">{magazineDescription}</p>
                   </div>
                 </div>

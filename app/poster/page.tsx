@@ -18,44 +18,44 @@ export interface PosterItem {
 
 const posters: PosterItem[] = [
   {
-    id: 'cruciverba',
-    title: 'Cruciverba',
-    year: '2024',
-    context: 'Personal Project',
-    src: '/art/poster/cruciverba.png',
-    aspectRatio: '3 / 4',
-    description:
-      'Experimental typographic poster exploring the visual rhythm between crosswords and music. A composition blending a rigid modular grid, high-contrast photography, and sharp chromatic hits of acid green, deep purple, and rich black.',
-  },
-  {
-    id: 'nurse',
-    title: 'Nurse',
-    year: '2024',
-    context: 'Academic Project',
+    id: 'nurse-issues',
+    title: 'Nurse Issues',
+    year: '2023',
+    context: 'Gift',
     src: '/art/poster/nurse.png',
     aspectRatio: '3 / 4',
     description:
-      'Graphic design project developed in an academic setting, centered on raw social and emotional narrative. The dialogue between magenta and dark purple tones reflects the demanding reality of nursing care through a direct gaze and bitter irony.',
+      'This project was born as a Christmas gift for my girlfriend, who, since she started studying pediatric nursing, she has self-diagnosed herself with a hundred different rare diseases. This was my way of reassuring her.',
   },
   {
-    id: 'devil',
-    title: 'Devil',
-    year: '2023',
-    context: 'Personal Project',
+    id: 'crosswords',
+    title: 'Crosswords',
+    year: '2024',
+    context: 'Personal project',
+    src: '/art/poster/cruciverba.png',
+    aspectRatio: '3 / 4',
+    description:
+      'I originally thought at this poster as a gift for my father, who really loves doing crosswords, but when I finished it I simply liked it so much that I had to keep it for myself. My father didn’t even had the much free space anyway…',
+  },
+  {
+    id: 'chats-with-the-devil',
+    title: 'Chats with the Devil',
+    year: '2025',
+    context: 'Personal project',
     src: '/art/poster/devil.png',
     aspectRatio: '4 / 5',
     description:
-      'Typographic and illustrative artwork with an esoteric, printmaker spirit. Inspired by traditional woodcut engravings and the duality archetype, featuring mirrored golden typography, tactile noise, and inverted chimeric creatures.',
+      'I came up with this idea by discovering a really cool website, plenty of old illustrations taken from books, magazines and newspapers from all over the world. In that period I was really trying to learn how to use blending modes in photoshop so I took the best Image I found and made a poster out of it.',
   },
   {
-    id: 'stankovic',
-    title: 'Stankovic',
-    year: '2023',
-    context: 'Personal Project',
+    id: 'dejan-stankovic',
+    title: 'Dejan Stankovic',
+    year: '2026',
+    context: 'Personal project',
     src: '/art/poster/stankovic.jpg',
     aspectRatio: '4 / 5',
     description:
-      'Graphic homage to iconic Inter Milan midfielder Dejan Stanković (#5). A mixed-media visual piece combining torn paper textures, digital pixel patterns, and classic Nerazzurri tones to merge football fandom with a gritty grunge aesthetic.',
+      'Not much to say here, just my favorite Inter’s player. He deserved a poster, I made it.',
   },
 ];
 
@@ -174,21 +174,19 @@ export default function PosterPage() {
               <>
                 <div className="sidebar-content-top">
                   <div className="sidebar-kicker-row">
-                    <span className="sidebar-kicker">Poster Archive</span>
+                    <span className="sidebar-kicker">2023 / Today</span>
                     <span className="sidebar-kicker-sep">•</span>
                     <span className="sidebar-kicker">Graphic Design</span>
                   </div>
                   <div>
-                    <h1 className="sidebar-title">Posters &amp; Graphics</h1>
-                    <p className="sidebar-subtitle">Typographic and visual experimentation</p>
+                    <h1 className="sidebar-title">Posters</h1>
+                    <p className="sidebar-subtitle">Graphic design &amp; personal works</p>
                   </div>
                   <div className="sidebar-divider" />
                   <div className="sidebar-description-box">
                     <span className="sidebar-description-heading">Overview</span>
                     <p className="sidebar-description-text">
-                      A series of experimental typographic and graphic posters created between 2023 and 2024.
-                      Explorations across modular grids, printmaker aesthetics, bold chromatic contrast,
-                      and unconventional editorial layouts.
+                      Posters are elements that are highly underestimated, especially considering their constant presence and influence. A single piece of paper that always stands in front of our sight can have a deep impact on our mood and could lead us to build a strong relation with it. These projects in particular are personal works, which allowed me to improve my skills and to learn something new every time.
                     </p>
                   </div>
                 </div>

@@ -18,44 +18,43 @@ export interface VinylItem {
 
 const vinyls: VinylItem[] = [
   {
-    id: 'casbah',
-    title: 'Casbah',
-    subtitle: 'Roberto Cassiani & Luigi Ballista',
-    year: '2023',
-    context: 'Personal Project',
-    src: '/art/vinili/casbah.png',
-    description:
-      'Vinyl sleeve artwork designed for Roberto Cassiani and Luigi Ballista. A high-contrast visual design built upon an electric blue and pitch black duo-tone, pairing stylized silhouettes with heavily grained rural photography.',
-  },
-  {
-    id: 'soi',
-    title: 'Situazioni Organiche Indipendenti',
-    subtitle: 'SOI',
-    year: '2024',
-    context: 'Academic Project',
-    src: '/art/vinili/soi.png',
-    description:
-      'Album concept born from research into the tension between obsolete hardware and wild nature. A vintage CRT monitor immersed in a field of red poppies reflects digital memories settled within organic landscapes.',
-  },
-  {
     id: 'stampede',
     title: 'Stampede',
     subtitle: 'The Doobie Brothers',
-    year: '1975',
-    context: 'Academic Project',
+    year: '2024',
+    context: 'Personal project',
     src: '/art/vinili/stampede-grey.png',
     description:
-      'Visual redesign for The Doobie Brothers\' classic record. The style pairs high-contrast Western aesthetics with monolithic typography and analogue film grain to elevate tracklisting and visual narrative.',
+      'For a few years now, the Doobie Brothers have taken first place on my Spotify listening list, especially thanks to a masterpiece like Stampede. I still don\'t understand why there isn\'t a radio that plays "I cheat the hangman" all day.',
   },
   {
-    id: 'upu-back',
-    title: 'UPU back',
-    subtitle: 'Ballista\'s Records',
+    id: 'casbah',
+    title: 'Casbah',
+    subtitle: 'Luigi Ballista & Roberto Cassiani',
     year: '2025',
-    context: 'Personal Project',
+    context: 'Commissioned by my father',
+    src: '/art/vinili/casbah.png',
+    description:
+      'In his 60 years of life, my father wrote so many songs that a playlist containing them all would last at least until 2100. I have to say that they were less simple customers than I expected.',
+  },
+  {
+    id: 'upu-vol-2',
+    title: 'UPU Vol. 2',
+    year: '2025',
+    context: 'Gift',
     src: '/art/vinili/vinyl-back.png',
     description:
-      'Back cover design for Ballista\'s Records. Featuring neon-pink paper textures, restrained typography, and a central distorted image that highlights the tactile craft of musical production.',
+      'This was probably the gift I\'m most fond of, because it represents an extremely rare meeting point between my musical tastes and those of my girlfriend. Even though it arrived almost 2 months late, it was still really appreciated.',
+  },
+  {
+    id: 'soi',
+    title: 'S.O.I.',
+    subtitle: 'Independent Organic Situations',
+    year: '2026',
+    context: 'Commissioned by my father',
+    src: '/art/vinili/soi.png',
+    description:
+      'My father\'s passion for music took a second youth when he discovered that artificial intelligence would allow him to produce his songs without having too expensive recording equipment. Independent Organic Situations is the result of this machine-man collaboration, the symbol of a union that, if controlled, can create something beautiful.',
   },
 ];
 
@@ -179,21 +178,19 @@ export default function VinylPage() {
               <>
                 <div className="sidebar-content-top">
                   <div className="sidebar-kicker-row">
-                    <span className="sidebar-kicker">Vinyl Collection</span>
+                    <span className="sidebar-kicker">2024 / Today</span>
                     <span className="sidebar-kicker-sep">•</span>
-                    <span className="sidebar-kicker">Sleeve Archive</span>
+                    <span className="sidebar-kicker">Graphic Design &amp; Typography</span>
                   </div>
                   <div>
-                    <h1 className="sidebar-title">Vinyls &amp; Sleeves</h1>
-                    <p className="sidebar-subtitle">Sleeve design &amp; visual direction</p>
+                    <h1 className="sidebar-title">Vinyls</h1>
+                    <p className="sidebar-subtitle">Album covers &amp; typography</p>
                   </div>
                   <div className="sidebar-divider" />
                   <div className="sidebar-description-box">
                     <span className="sidebar-description-heading">Overview</span>
                     <p className="sidebar-description-text">
-                      Editorial and graphic designs for vinyl records produced between 2023 and 2025.
-                      A visual investigation balancing sharp duotones, analog print grain, tactile typography,
-                      and organic-digital contrasts.
+                      Working on album covers is the apotheosis for a designer that loves and lives for music. In this field I’ve tried to revisit covers of albums that I loved and to create completely new ones for emerging albums.
                     </p>
                   </div>
                 </div>
