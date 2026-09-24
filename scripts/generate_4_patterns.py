@@ -15,12 +15,8 @@ from pathlib import Path
 API_URL = "https://ark.ap-southeast.bytepluses.com/api/v3/images/generations"
 MODEL = "dola-seedream-5-0-pro-260628"
 
-REFERENCE_IMAGE_PATH = Path(
-    "/Users/cadowo/Library/Mobile Documents/com~apple~CloudDocs/Documents/projects/vibes/portfolio-mac/.agy-acp/attachments/7e27664b-0ed5-42d1-82d8-4181e89dbe25.png"
-)
-OUTPUT_DIR = Path(
-    "/Users/cadowo/Library/Mobile Documents/com~apple~CloudDocs/Documents/projects/vibes/portfolio-mac/public/patterns"
-)
+REFERENCE_IMAGE_PATH = Path("public/art/loader/mushroom-head.png")
+OUTPUT_DIR = Path("public/patterns")
 
 PATTERNS = [
     {
@@ -73,7 +69,7 @@ def get_api_key() -> str:
     key = os.environ.get("MODELARK_API_KEY") or os.environ.get("LAS_API_KEY") or os.environ.get("ARK_API_KEY")
     if key:
         return key
-    env_file = Path("/Users/cadowo/Library/Mobile Documents/com~apple~CloudDocs/Documents/projects/vibes/portfolio-mac/.env")
+    env_file = Path(".env")
     if env_file.exists():
         for line in env_file.read_text().splitlines():
             line = line.strip()

@@ -452,7 +452,7 @@ export default function AboutMePage() {
                         </div>
                         <div className="about-detail-contact-row">
                           <span className="about-contact-type">Phone &amp; WhatsApp</span>
-                          <strong>+39 327 225 4371</strong>
+                          <strong>Available upon request</strong>
                         </div>
                         <div className="about-detail-contact-row">
                           <span className="about-contact-type">Instagram</span>
@@ -497,7 +497,7 @@ export default function AboutMePage() {
                     <>
                       <div>
                         <h1 className="sidebar-title">Marco Ballista</h1>
-                        <p className="sidebar-subtitle">Graphic Designer • Born Nov 19, 2004</p>
+                        <p className="sidebar-subtitle">Graphic Designer &amp; Visual Communicator</p>
                       </div>
                       <div className="sidebar-divider" />
                       <div className="sidebar-description-box">
@@ -664,9 +664,9 @@ export default function AboutMePage() {
                           />
                           <CopyableContact
                             label="Phone & WhatsApp"
-                            value="+39 3272254371"
-                            displayValue="+39 327 225 4371"
-                            href="tel:+393272254371"
+                            value="Available upon request"
+                            displayValue="Available upon request"
+                            href="mailto:odcstudioodc@gmail.com"
                           />
                           <CopyableContact
                             label="LinkedIn"
@@ -692,12 +692,11 @@ export default function AboutMePage() {
                         <span className="sidebar-description-heading">Curriculum Vitae</span>
                         <div className="sidebar-cv-actions">
                           <a
-                            href="/art/about/cv-2026.pdf"
-                            download="CV-Marco-Ballista-2026.pdf"
+                            href="mailto:odcstudioodc@gmail.com?subject=CV%20Request%20-%20Marco%20Ballista"
                             className="sidebar-action-btn"
                           >
                             <Download className="w-4 h-4 mr-2" />
-                            Download Official CV (PDF)
+                            Request Official CV (PDF)
                           </a>
                         </div>
                       </div>
@@ -736,21 +735,11 @@ export default function AboutMePage() {
                         <span className="sidebar-description-heading">Downloads &amp; Links</span>
                         <div className="sidebar-cv-actions">
                           <a
-                            href="/art/about/cv-2026.pdf"
-                            download="CV-Marco-Ballista-2026.pdf"
+                            href="mailto:odcstudioodc@gmail.com?subject=CV%20Request%20-%20Marco%20Ballista"
                             className="sidebar-action-btn"
                           >
                             <Download className="w-4 h-4 mr-2" />
-                            Download PDF (1.3 MB)
-                          </a>
-                          <a
-                            href="/art/about/cv-2026.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="sidebar-action-btn sidebar-action-btn-secondary"
-                          >
-                            <ExternalLink className="w-4 h-4 mr-2" />
-                            Open Fullscreen in Tab
+                            Request Official CV via Email
                           </a>
                         </div>
                       </div>

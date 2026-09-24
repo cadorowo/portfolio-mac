@@ -20,7 +20,7 @@ def get_api_key():
         return key
     env_paths = [
         Path(".env"),
-        Path("/Users/cadowo/Library/Mobile Documents/com~apple~CloudDocs/Documents/projects/vibes/video-workflowe/.env"),
+        Path("../.env"),
     ]
     for p in env_paths:
         if p.exists():
@@ -114,7 +114,8 @@ def generate_image(prompt: str, reference_path: Path, output_path: Path, size="2
     return output_path
 
 if __name__ == "__main__":
-    ref = Path("/Users/cadowo/Library/Mobile Documents/com~apple~CloudDocs/Documents/projects/vibes/portfolio-mac/.agy-acp/attachments/7e27664b-0ed5-42d1-82d8-4181e89dbe25.png")
-    out = Path("/Users/cadowo/Library/Mobile Documents/com~apple~CloudDocs/Documents/projects/vibes/portfolio-mac/output/patterns/test_pattern_16x9.png")
+    ref = Path("public/art/loader/mushroom-head.png")
+    out = Path("public/patterns/test_pattern_16x9.png")
     prompt = "A seamless minimalist repeating grid pattern in 16:9 horizontal format featuring the exact same hand-drawn black ink characters from the reference image on warm textured paper."
-    generate_image(prompt, ref, out)
+    if ref.exists():
+        generate_image(prompt, ref, out)
